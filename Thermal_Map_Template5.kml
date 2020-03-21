@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Thermal_Map_EU.kml</name>
+	<Style id="failed">
+		<LineStyle>
+			<width>0</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>80ff5500</color>
+		</PolyStyle>
+	</Style>
+	<Style id="failed0">
+		<LineStyle>
+			<width>0</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>8000aa00</color>
+		</PolyStyle>
+	</Style>
+	<Style id="failed1">
+		<LineStyle>
+			<width>0</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>80ff5500</color>
+		</PolyStyle>
+	</Style>
+	<Style id="failed2">
+		<LineStyle>
+			<width>0</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>8000aa00</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="__managed_style_06F2BE725C10C6D6C9E3">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#__managed_style_1EFD490F8D10C6D6C9E3</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#__managed_style_0EFB75074C10C6D6C9E4</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="failed3">
+		<LineStyle>
+			<width>0</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>9900aa00</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="__managed_style_09AC8B796010C6DB76711">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#failed1</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#failed6</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="failed4">
+		<LineStyle>
+			<width>0</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>80ff5500</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="__managed_style_012F563AF410C6D89C28">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#failed3</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#failed5</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="failed5">
+		<LineStyle>
+			<width>0</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>9900aa00</color>
+		</PolyStyle>
+	</Style>
+	<Style id="failed6">
+		<LineStyle>
+			<width>0</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>80ff5500</color>
+		</PolyStyle>
+	</Style>
+	<Folder>
+		<name>Thermal_Map</name>
+		<open>1</open>
+		<styleUrl>#__managed_style_06F2BE725C10C6D6C9E3</styleUrl>
+		<Folder>
+			<name>good_thermals</name>
+			<open>1</open>
+			<Placemark>
+				<name>TS_Test1_A</name>
+				<styleUrl>#__managed_style_012F563AF410C6D89C28</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								9.025830271397426,53.46493577242719,0 8.986157446488383,53.46952117358134,0 8.986024308034002,53.46940930378423,0 8.985302043383754,53.46903306939636,0 8.962043301887295,53.46599044595203,0 8.968576645332982,53.46168538137756,0 8.966417710231729,53.44675457151015,0 8.966524947387285,53.44638535081827,0 8.967131782344268,53.44597423810207,0 8.967793436413203,53.44537740428722,0 8.968271199353492,53.4448553774634,0 9.001090859161449,53.43746144188587,0 9.002104832473883,53.43755849249606,0 9.002921245439754,53.43773603605858,0 9.020404786676616,53.45117244097055,0 9.021175983138708,53.45155477375865,0 9.021806641340389,53.45182228413126,0 9.02243786449873,53.45209001648206,0 9.025830271397426,53.46493577242719,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>bad_thermals</name>
+			<open>1</open>
+			<Placemark>
+				<name>TS_Test1_B</name>
+				<styleUrl>#__managed_style_09AC8B796010C6DB76711</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								9.011924571266947,53.41505602161574,0 8.973529276021781,53.42064657904227,0 8.945585548343161,53.42565892615912,0 8.938677839628507,53.41308194882329,0 8.970254321221713,53.40271102530304,0 8.997250666945229,53.3994064274755,0 9.018014604123596,53.40177668212717,0 9.011924571266947,53.41505602161574,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+	</Folder>
+</Document>
+</kml>
