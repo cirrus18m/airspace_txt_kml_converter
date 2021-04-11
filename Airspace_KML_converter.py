@@ -1,5 +1,5 @@
 from matplotlib import pyplot as plt
-from easygui import fileopenbox, filesavebox, msgbox
+from easygui import fileopenbox, filesavebox, msgbox, multenterbox, buttonbox
 import os
 
 class Airspace_KML_converter(object):
@@ -32,6 +32,24 @@ class Airspace_KML_converter(object):
 
     def kml_2_open_airspace_format(self, full_path):
         """ converts kml files to open airspace files """
+
+        #von EKu ergänzt um variable Eingabe von lower_limit und upper_limit
+        msg = "Enter upper and lower flightlevel (FL) of the to-be-generated airspaces"
+        title = "Airspace Limits (user-defined)"
+        fieldNames = ["upper limit (FL)", "lower limit (FL)"]
+        global airspaceLimits
+        airspaceLimits = multenterbox(msg, title, fieldNames)
+        # make sure that none of the fields was left blank
+        while 1:
+            if airspaceLimits == None: break
+            errmsg = ""
+            for i in range(len(fieldNames)):
+                if airspaceLimits[i].strip() == "":
+                    errmsg = errmsg + ('"%s" is a required field.\n\n' % fieldNames[i])
+            if errmsg == "": break  # no problems found
+            airspaceLimits = multenterbox(errmsg, title, fieldNames, airspaceLimits)
+        print (airspaceLimits)
+
         # read file
         f = open(full_path,'r')
         kml = f.readlines()
@@ -53,7 +71,6 @@ class Airspace_KML_converter(object):
         8.575289966189502, 53.20745451706468, 0
         8.560633120477348, 53.19724609335408, 0
         8.529121049900063, 53.19549566929423, 0
-
             < / coordinates >
         
         < / LinearRing >
@@ -68,9 +85,18 @@ class Airspace_KML_converter(object):
                 as_type = kml[idxLine+1].replace('\t','').replace('<name>','').replace('</name>\n','')  # <name>B</name>
                 print('Reading AS-types: ' + as_type)
                 if not (as_type == 'A' or as_type == 'B'):
-                    print('#### Check Folder / Airspace Types, must be "A" or "B" and try again (current %s)' % as_type)
-                    msgbox('Check Folder / Airspace Types, must be "A" or "B" and try again (current %s)' % as_type)
-                    quit()
+                    # Box to decide whether to create A or B
+                    #image = "python_and_check_logo.gif"
+                    msg = "Detected airspace »" + as_type + "« is neither airspace »A« nor airspace »B« \n" \
+                                                            "You'll have to choose to convert it to one of the following airspaces:"
+                    choices = ["A [Alpha]", "B [Bravo]"]
+                    reply = buttonbox(msg, choices=choices)
+                    print(reply[0])
+                    as_type = reply[0]
+
+                    # print('#### Check Folder / Airspace Types, must be "A" or "B" and try again (current %s)' % as_type)
+                    # msgbox('Check Folder / Airspace Types, must be "A" or "B" and try again (current %s)' % as_type)
+                    # quit()
 
             if '<Placemark>' in kml[idxLine]:  # begin of airspace
                 container = []
@@ -100,6 +126,7 @@ class Airspace_KML_converter(object):
         f.writelines(outlines)
         f.close()
         print('Result was written to: %s' % target_path)
+        print(outlines) #EKu
 
     def open_airspace_format_2_kml(self, source_file_txt):
         """
@@ -263,7 +290,6 @@ class Airspace(object):
         :param file_type: 'kml' or 'txt'
         :param asType: only relevant for kml --> then 'A' or 'B'
         :param kml_template: only relevant for kml --> template dictionary showing required format
-
         """
         self.name = ''
         self.as_type = as_type  # airspace type: A or B
@@ -308,9 +334,19 @@ class Airspace(object):
         self.txt_lines.append('AC %s\n' % self.as_type)
         # AN TS_Erzgeb
         self.txt_lines.append('AN %s\n' % self.name)
+
         # heights
-        self.txt_lines.append('AL FL98\n')
-        self.txt_lines.append('AH FL99\n')
+        if airspaceLimits != "":
+            lower_limit = int(airspaceLimits[1])
+            upper_limit = int(airspaceLimits[0])
+            lower_limit_string = 'AL FL' + str(lower_limit) + '\n'
+            upper_limit_string = 'AH FL' + str(upper_limit) + '\n'
+        else:
+            lower_limit_string = 'AL FL98\n'
+            upper_limit_string = 'AH FL99\n'
+
+        self.txt_lines.append(lower_limit_string)
+        self.txt_lines.append(upper_limit_string)
         # coordinates
         for coo_pt in self.coordinates_kml.split(' ')[:-1]:
             # Target format: DP 50:26:22 N 012:17:59 E
