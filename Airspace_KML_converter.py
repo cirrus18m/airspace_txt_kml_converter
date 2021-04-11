@@ -104,7 +104,18 @@ class Airspace_KML_converter(object):
                 # make sure only Polygons are stored
                 for as_line in container:
                     if '<Polygon>' in as_line:
-                        self.airspaces.append(Airspace(lines=container, file_type='kml', as_type=as_type))
+                        # remove 'LookAt'
+                        idx_lookAt_start = None
+                        idx_lookAt_end = None
+                        for idx, line_of_container in enumerate(container):
+                            if "<LookAt>" in line_of_container:
+                                idx_lookAt_start = idx
+                            if "</LookAt>" in line_of_container:
+                                idx_lookAt_end = idx
+                        # Remove lookAt lines if necessary
+                        if idx_lookAt_start:
+                            container = container[0:idx_lookAt_start] + container[idx_lookAt_end+1::]  # cut out look at part
+                    self.airspaces.append(Airspace(lines=container, file_type='kml', as_type=as_type))
             container.append(kml[idxLine])
             idxLine += 1
         # summary
@@ -353,7 +364,12 @@ class Airspace(object):
             lat_long = coo_pt.split(',')
             # latitude
             latDecAsStr = lat_long[1].split('.')
+            #if '.' not in latDecAsStr: # take care of case "51" instead of "51.123456"
+            #    latDecAsStr += '.000000'
             lat_degree = abs(int(latDecAsStr[0]))
+            print(f'latDecAsStr {latDecAsStr}')
+            if len(latDecAsStr)==1:
+                latDecAsStr.append('0')
             lat_secondDec = (float('0.' + latDecAsStr[1])*60) % 1
             lat_minute = round((float('0.' + latDecAsStr[1])*60) - lat_secondDec)
             lat_second = round(lat_secondDec*60)
@@ -363,6 +379,10 @@ class Airspace(object):
             else:
                 cooString += ' N'
             # longitude
+            print(f'converting lat_long {lat_long}')
+            # take care of case: no decimal sign included, case "11" instead of "11.123456"
+            if '.' not in lat_long[0]:
+                lat_long[0] += '.0'
             lonDecAsStr = lat_long[0].split('.')
             lon_degree = abs(int(lonDecAsStr[0]))
             lon_secondDec = (float('0.' + lonDecAsStr[1]) * 60) % 1
