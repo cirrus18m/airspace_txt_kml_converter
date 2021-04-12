@@ -1,0 +1,198 @@
+<html>
+	<head>
+		<meta charset="utf-8"> 
+<!-- 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /> -->
+			
+		
+		
+		<link rel="stylesheet" href="leaflet/leaflet.css" />
+		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="Leaflet.MeasureControl/leaflet.measurecontrol.css" />
+		<link rel="stylesheet" href="Leaflet.draw/dist/leaflet.draw.css" />
+<!-- 		<link rel="stylesheet" href="leaflet-sidebar.css" /> -->
+
+		<script src="leaflet/leaflet.js"></script>
+
+<!-- 		<script src="d3/d3.min.js"></script> -->
+		<script src="d3/d3.js"></script>
+<!-- 		<script src="leaflet/leaflet-src.js"></script> -->
+		<script src="Leaflet.D3SvgOverlay/L.D3SvgOverlay.js"></script>
+		<script src="Leaflet.draw/dist/leaflet.draw.js"></script>
+		<script src="Leaflet.MeasureControl/leaflet.measurecontrol.js"></script>
+<!-- 		<script src="leaflet-sidebar.js"></script> -->
+		<script src="leaflet-aerial.js"></script>
+        
+		<script src="rrule.js"></script>
+		<script src="nlp.js"></script>
+
+		
+		<style type="text/css">
+			* {
+				padding: 0;
+				margin: 0;
+			}
+			body {
+				height: 100%;
+				padding: 0;
+				margin: 0;
+			}
+			#map {
+				height:100%;
+				overflow: hidden;
+				background:green;
+			}
+			.airspace {
+				cursor: pointer;
+			}
+			circle, path {
+				fill-opacity:0.3;
+				stroke-opacity:0.35;
+				stroke: black;
+			}
+			/* Gliding hotspots */
+			circle.A, path.A {
+				fill: green;
+			}
+			circle.B, path.B {
+				fill: blue;
+			}
+			circle, path {
+				fill: red;
+			}
+			circle.selected, path.selected {
+				stroke-width: 3.5;
+				stroke-opacity: 0.5;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="wrapper">
+			<header>
+			<h1>GlidingHotspots.eu - Thermal & Wave Map</h1>
+			<nav>
+				<ul>
+					<li><a title="" href="http://glidinghotspots.eu/?module=simple&amp;options=view;0002.xml" target="_blank">Introduction</a></li>
+					<li><a title="" href="http://glidinghotspots.eu/?module=simple&amp;options=view;0001.xml" target="_blank">Downloads</a></li>
+					<li><a title="" href="http://glidinghotspots.eu/?module=simple&amp;options=view;0005.xml" target="_blank">Submit Thermal Spaces</a></li>
+					<li><a title="" href="http://glidinghotspots.eu/?module=guestbook&amp;options=view" target="_blank">Guestbook</a></li>
+					<li><a title="" href="https://drive.google.com/open?id=1rjfX2LF4LbiETZVdGH3n2bE4PbmaJZrf&usp=sharing" target="_blank">GoogleMaps View</a></li>
+				</ul>
+			</nav>
+			</header>
+			<div id="content" style="width:100%">
+				<div id="map" ></div>
+			</div>
+		</div>
+		<script type="text/javascript" >
+
+			var mapFolder = document.location.href.substring(0,document.location.href.lastIndexOf('/'))
+			// create a map in the "map" div, set the view to a given place and zoom
+			var map = L.map('map').setView([48.5, 11],5);
+			L.control.scale().addTo(map);
+
+			// MapQuest discuntinued as of 2016, needs api key
+			var layerOSM = L.tileLayer(
+				'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+				{
+					attribution:
+						'&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+					subdomains: 'abc'
+				}).addTo(map);
+
+            		// initialize empty layer for airfields            
+			var airfields = L.layerGroup();
+
+			var baseLayers = {
+				"Openstreetmap": layerOSM
+			};
+
+			var overlays = {
+				"Thermal Spaces":               L.aerialOverlay(map,{'url':mapFolder+'/data2show/Thermal_Map_EU_converted.json','classes':['A', 'B']}),
+				"waves_GER_wind_east":          L.aerialOverlay(map,{'url':mapFolder+'/data2show/waves_GER_wind_east_converted.json'}), 
+				"waves_GER_wind_southeast":     L.aerialOverlay(map,{'url':mapFolder+'/data2show/waves_GER_wind_southeast_converted.json'}), 
+				"waves_GER_wind_southwest":     L.aerialOverlay(map,{'url':mapFolder+'/data2show/waves_GER_wind_southwest_converted.json'}), 
+				"waves_CZ_wind_southwest":      L.aerialOverlay(map,{'url':mapFolder+'/data2show/waves_CZ_wind_southwest_converted.json'}), 
+				"waves_FR_Alps_wind_northwest": L.aerialOverlay(map,{'url':mapFolder+'/data2show/waves_FR_Alps_wind_northwest_converted.json'}), 
+				"waves_Pyrenees_wind_north":    L.aerialOverlay(map,{'url':mapFolder+'/data2show/waves_Pyrenees_wind_north_converted.json'}), 					"waves_Pyrenees_wind_south":    L.aerialOverlay(map,{'url':mapFolder+'/data2show/waves_Pyrenees_wind_south_converted.json'}), 
+				"TravelByGlider airfields":     airfields
+			};
+			var layers = L.control.myLayers(baseLayers, overlays,{'collapsed':false,}).addTo(map);
+			var popup = L.popup();
+			
+			// get current travelByGlider waypoints
+			function getText(){
+			    // read text from URL location
+			    var request = new XMLHttpRequest();
+			    request.open('GET', 'http://travelbyglider.eu/de/TBG_waypoints.cup', true);
+			    request.send(null);
+			    request.onreadystatechange = function () {
+				if (request.readyState === 4 && request.status === 200) {
+				    var type = request.getResponseHeader('Content-Type');
+				    if (type.indexOf("text") !== 1) {
+					//console.log(request.responseText)
+					return request.responseText;
+				    }
+				}
+			    }
+			};
+
+			//console.log(getText())		
+			// Add airfield from CSV File exported from TravelByGlider			
+			//d3.csv(mapFolder+ "/data2show/airfields.csv")
+			//d3.csv.parse(getText())
+
+			const convertCoordinatesFromCUP = function(coordinate,name='') 
+			{
+				const degSplitted = coordinate.split('.');
+				if (degSplitted.length === 1) 
+				{
+					return 0
+				} 
+				//take care of variing format
+				const deg = degSplitted[0].length>4 ? degSplitted[0].slice(0,3) : degSplitted[0].slice(0,2); 
+				const minutesBeforeDecimale = degSplitted[0].length>4 ? degSplitted[0].slice(3,5) : degSplitted[0].slice(2,4); 
+				const minutesBehindDecimale = degSplitted[1].slice(0,-1); // remove last letter
+				const minutes = minutesBeforeDecimale + '.' + minutesBehindDecimale;	
+				let dd = Number(deg) + Number(minutes)/60 //+ Number(seconds)/(60*60);
+				//console.log(name,': ', coordinate,':', dd, ' Details: ', deg,'.',minutes, ' -- ' , minutesBeforeDecimale + '.' + minutesBehindDecimale)
+				if (degSplitted[1].endsWith("W") || degSplitted[1].endsWith("S"))
+				{
+ 					dd*= -1;
+				}
+				return dd	
+			};
+
+			
+		d3.csv(mapFolder+"/data2show/tbg_waypoints.cup")
+		//d3.csv(mapFolder+"/data2show/airfields.csv")
+		.row(function(d) {
+				// Code is supposed to work with CSV and CUP files, therefore the field coordintes is being generated when source is CUP.
+				if (d.coordinates===undefined){ 
+					//console.log(d.name)
+					d = {...d, coordinates: convertCoordinatesFromCUP(d.lat,d.name) + ', ' + convertCoordinatesFromCUP(d.lon,d.name) + ', 0'};
+					
+				}
+				return d;
+			})
+		.get(function(error, rows) { 
+			//console.log(rows)
+			//console.log(error)
+			for (var k=0;k<rows.length;k++)
+			{
+				row = rows[k];
+				if (row.coordinates.length>2)
+				{
+					L.marker(row.coordinates.split(", "))
+					.addTo(airfields)
+					.bindPopup(row.name+'<br><a href="https://travelbyglider.eu" target="_blank">TravelByGlider</a>');
+				}
+				else
+				{
+					// these airports need coordinates
+					console.log(row);
+				}
+			}
+		});
+		</script>
+	</body>
+</html>
