@@ -1,6 +1,7 @@
 from matplotlib import pyplot as plt
 from easygui import fileopenbox, filesavebox, msgbox
 import os
+import json
 
 class Airspace_KML_converter(object):
     def __init__(self, full_path_of_source=''):
@@ -25,12 +26,12 @@ class Airspace_KML_converter(object):
         self.kml_lines = []  # airspace file in kml format
         """ handle conversion from and to KML / airspace format"""
         if full_path_of_source.lower().endswith('.kml'):
-            self.kml_2_open_airspace_format(full_path_of_source)
+            self.kml_2_open_airspace_and_json_format(full_path_of_source)
         if full_path_of_source.lower().endswith('.txt'):
             self.open_airspace_format_2_kml(full_path_of_source)
             self.plot_all()  # works for now only for TXT input
 
-    def kml_2_open_airspace_format(self, full_path):
+    def kml_2_open_airspace_and_json_format(self, full_path):
         """ converts kml files to open airspace files """
         # read file
         f = open(full_path,'r')
@@ -91,16 +92,22 @@ class Airspace_KML_converter(object):
                         # Remove lookAt lines if necessary
                         if idx_lookAt_start:
                             container = container[0:idx_lookAt_start] + container[idx_lookAt_end+1::]  # cut out look at part
+                        # append airspace to airspace list as airspace class
                         self.airspaces.append(Airspace(lines=container, file_type='kml', as_type=as_type))
             container.append(kml[idxLine])
             idxLine += 1
+        print('Loaded %d airspaces from KML-file (%s)' %(len(self.airspaces),full_path))
         # summary
         outlines = ['* KML conversion file, rename this line']
+        json_dict = {"circles": [], "polygons": []}
         for airspace in self.airspaces:
+            # prepare open-airspace formate
             outlines.append('\n\n')  # separate airspaces
             outlines.extend(airspace.txt_lines)
+            # prepare json
+            json_dict['polygons'].append(airspace.json_dict)
 
-        print('Loaded %d airspaces from KML-file (%s)' %(len(self.airspaces),full_path))
+        # write open airspace format
         target_path = full_path[:-4] + '_converted.txt'
         # uisave dialog
 
@@ -113,6 +120,15 @@ class Airspace_KML_converter(object):
         f.writelines(outlines)
         f.close()
         print('Result was written to: %s' % target_path)
+
+        # write json:
+        target_path_json = full_path[:-4] + '_converted.json'
+
+        json_string = json.dumps(json_dict)
+        json_file = open(target_path_json, "w")
+        json_file.write(json_string)
+        json_file.close()
+
 
     def open_airspace_format_2_kml(self, source_file_txt):
         """
@@ -290,9 +306,25 @@ class Airspace(object):
             #print('conversion here')
             self.kml_lines = lines
             self.make_open_airspace_format()
+            # generate json for maps:
+            self.make_json_airspace_format()
         if file_type == 'txt':  # case open airspace format
             self.txt_lines = lines
             self.make_kml_format(kml_template)
+
+    def make_json_airspace_format(self):
+        """generates json format for web page visualization"""
+        # The previous fct make_open_airspace_format already stored, coordinates_kml, name and type
+        # This data is collected in an dictionary, which then is stored as json.
+        # initialize  dict
+        coordinates_as_list_of_floats = []
+        # run through coordinates
+        coordinates_as_list_of_floats = []
+        for coo_pt in self.coordinates_kml.split(' ')[:-1]:
+            lat_long = coo_pt.split(',')
+            coordinates_as_list_of_floats.append([float(lat_long[1]), float(lat_long[0])])
+        # make json dict
+        self.json_dict = {"AL": "FL98", "AH": "FL99", "AC": self.as_type, "AN": self.name, "data": coordinates_as_list_of_floats}
 
     def make_open_airspace_format(self):
         """ convert to open airspace format"""
