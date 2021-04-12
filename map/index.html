@@ -129,6 +129,8 @@
             		// initialize empty layer for airfields            
 			var airfields = L.layerGroup();
 
+			var tbg_airfields = L.layerGroup();
+
 			var baseLayers = {
 				"Openstreetmap": layerOSM
 			};
@@ -137,7 +139,8 @@
 				"Thermal Spaces":               L.aerialOverlay(map,{'url':mapFolder+'/data2show/Thermal_Map_EU_converted.json','classes':['Good_thermals', 'Bad_thermals']}),
 				"Topology":                     L.aerialOverlay(map,{'url':mapFolder+'/data2show/Topo_Export_converted.json', 'classes':['Lakes', 'Mountains', 'Mountains_large_scale', 'Valleys_landable', 'Valleys_not_landable', 'Valleys_partly_landable']}),
 				"Waves":                        L.aerialOverlay(map,{'url':mapFolder+'/data2show/Wave_Export_converted.json', 'classes':['GER_wind_east', 'GER_wind_southeast', 'CZ_wind_southwest', 'Pyrenees_wind_south', 'Pyrenees_wind_north', 'FR_Alps_wind_northwest']}),
-				"TravelByGlider airfields":     airfields
+				"airfields":     				airfields,
+				"TravelByGlider airfields":     tbg_airfields
 			};
 			var layers = L.control.myLayers(baseLayers, overlays,{'collapsed':false,}).addTo(map);
 			var popup = L.popup();
@@ -185,21 +188,43 @@
 				return dd	
 			};
 
-			
-		d3.csv(mapFolder+"/data2show/tbg_waypoints.cup")
-		//d3.csv(mapFolder+"/data2show/airfields.csv")
-		.row(function(d) {
-				// Code is supposed to work with CSV and CUP files, therefore the field coordinates is being generated when source is CUP.
+		// reading tbg airports
+		d3.csv(mapFolder+"/data2show/tbg_waypoints.cup") //d3.csv(mapFolder+"/data2show/airfields.csv")
+		.row(function(d) {	// Code is supposed to work with CSV and CUP files, therefore the field coordinates is being generated when source is CUP.
 				if (d.coordinates===undefined){ 
 					//console.log(d.name)
 					d = {...d, coordinates: convertCoordinatesFromCUP(d.lat,d.name) + ', ' + convertCoordinatesFromCUP(d.lon,d.name) + ', 0'};
-					
 				}
 				return d;
 			})
 		.get(function(error, rows) { 
-			//console.log(rows)
-			//console.log(error)
+			for (var k=0;k<rows.length;k++)
+			{
+				row = rows[k];
+				if (row.coordinates.length>2)
+				{
+					L.marker(row.coordinates.split(", "))
+					.addTo(tbg_airfields)
+					.bindPopup(row.name+'<br><a href="https://travelbyglider.eu" target="_blank">TravelByGlider</a>');
+				}
+				else
+				{
+					// these airports need coordinates
+					console.log(row);
+				}
+			}
+		});
+
+		// reading airports
+		d3.csv(mapFolder+"/data2show/airports.cup")
+		.row(function(d) {	// Code is supposed to work with CSV and CUP files, therefore the field coordinates is being generated when source is CUP.
+				if (d.coordinates===undefined){
+					//console.log(d.name)
+					d = {...d, coordinates: convertCoordinatesFromCUP(d.lat,d.name) + ', ' + convertCoordinatesFromCUP(d.lon,d.name) + ', 0'};
+				}
+				return d;
+			})
+		.get(function(error, rows) {
 			for (var k=0;k<rows.length;k++)
 			{
 				row = rows[k];
@@ -207,7 +232,7 @@
 				{
 					L.marker(row.coordinates.split(", "))
 					.addTo(airfields)
-					.bindPopup(row.name+'<br><a href="https://travelbyglider.eu" target="_blank">TravelByGlider</a>');
+					.bindPopup('airport: ' + row.name + ' | freq:' + row.freq + 'MHz');
 				}
 				else
 				{
