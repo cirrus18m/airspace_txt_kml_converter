@@ -63,6 +63,7 @@ class Airspace_KML_converter(object):
         container = []
         idxLine = 0
         did_not_pass_main_folder = True
+        list_of_airspace_types_included = []
         while idxLine < len(kml):
             #print(kml[idxLine])
             #if '<Folder>' in kml[idxLine] and did_not_pass_main_folder:
@@ -72,10 +73,11 @@ class Airspace_KML_converter(object):
             if '<Folder>' in kml[idxLine]:  # begin of airspace
                 as_type = kml[idxLine+1].replace('\t','').replace('<name>','').replace('</name>\n','')  # <name>B</name>
                 print('Reading AS-types: ' + as_type)
-                if not (as_type == 'A' or as_type == 'B'):
-                    print('#### Check Folder / Airspace Types, must be "A" or "B" and try again (current %s)' % as_type)
-                    msgbox('Check Folder / Airspace Types, must be "A" or "B" and try again (current %s)' % as_type)
-                    quit()
+                list_of_airspace_types_included.append(as_type)
+                #if not (as_type == 'A' or as_type == 'B'):
+                #    print('#### Check Folder / Airspace Types, must be "A" or "B" and try again (current %s)' % as_type)
+                #    msgbox('Check Folder / Airspace Types, are not "A" or "B" (current %s). Airspace E will be used for export.' % as_type)
+                #    as_type = 'E'
 
             if '<Placemark' in kml[idxLine]:  # begin of airspace
                 container = []
@@ -122,13 +124,16 @@ class Airspace_KML_converter(object):
         print('Result was written to: %s' % target_path)
 
         # write json:
-        target_path_json = full_path[:-4] + '_converted.json'
+        target_path_json = target_path[:-4] + '.json'
 
         json_string = json.dumps(json_dict)
         json_file = open(target_path_json, "w")
         json_file.write(json_string)
         json_file.close()
 
+        # write list of airspace files for index.html for leaflet map
+        print('The following airspace types have been converted:')
+        print(list_of_airspace_types_included)
 
     def open_airspace_format_2_kml(self, source_file_txt):
         """
@@ -324,7 +329,17 @@ class Airspace(object):
             lat_long = coo_pt.split(',')
             coordinates_as_list_of_floats.append([float(lat_long[1]), float(lat_long[0])])
         # make json dict
-        self.json_dict = {"AL": "FL98", "AH": "FL99", "AC": self.as_type, "AN": self.name, "data": coordinates_as_list_of_floats}
+        # rename name if not thermal space
+        if self.name.startswith('TS_') and not (self.as_type == 'A' or self.as_type == 'B'):
+            name_for_json = self.name[3:]
+        else:
+            name_for_json = self.name
+        # rename airspace type for json:
+        if self.as_type == 'A':
+            self.as_type = 'Good_thermals'
+        if self.as_type == 'B':
+            self.as_type = 'Bad_thermals'
+        self.json_dict = {"AL": "FL98", "AH": "FL99", "AC": self.as_type, "AN": name_for_json, "data": coordinates_as_list_of_floats}
 
     def make_open_airspace_format(self):
         """ convert to open airspace format"""
@@ -364,7 +379,7 @@ class Airspace(object):
             #if '.' not in latDecAsStr: # take care of case "51" instead of "51.123456"
             #    latDecAsStr += '.000000'
             lat_degree = abs(int(latDecAsStr[0]))
-            print(f'latDecAsStr {latDecAsStr}')
+            #print(f'latDecAsStr {latDecAsStr}')
             if len(latDecAsStr)==1:
                 latDecAsStr.append('0')
             lat_secondDec = (float('0.' + latDecAsStr[1])*60) % 1
@@ -376,7 +391,7 @@ class Airspace(object):
             else:
                 cooString += ' N'
             # longitude
-            print(f'converting lat_long {lat_long}')
+            #print(f'converting lat_long {lat_long}')
             # take care of case: no decimal sign included, case "11" instead of "11.123456"
             if '.' not in lat_long[0]:
                 lat_long[0] += '.0'

@@ -1,0 +1,2634 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Topo_Export_210412.kml</name>
+	<Style id="poly-795548-4501-76-nodesc-normal">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ffff0000</color>
+			<width>4.501</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4c485579</color>
+		</PolyStyle>
+	</Style>
+	<Style id="poly-795548-1200-61-nodesc-highlight">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>b3ffff55</color>
+			<width>4.8</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>3dffff55</color>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin2">
+		<LineStyle>
+			<color>ffff0000</color>
+			<width>6.7515</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4c485579</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin1">
+		<LineStyle>
+			<color>ffff0000</color>
+			<width>6.7515</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4c485579</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin11">
+		<LineStyle>
+			<color>ff5252ff</color>
+			<width>6.1515</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4c5252ff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="poly-F57C00-2501-97-nodesc-normal">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff007cf5</color>
+			<width>2.501</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>61007cf5</color>
+		</PolyStyle>
+	</Style>
+	<Style id="poly-000000-1200-77-nodesc-highlight">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff000000</color>
+			<width>1.8</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4dff0000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="poly-7CB342-3701-82-nodesc-normal">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff42b37c</color>
+			<width>3.701</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>5242b37c</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="poly-FF5252-4101-76-nodesc">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#poly-FF5252-4101-76-nodesc-normal</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#poly-FF5252-4101-76-nodesc-highlight</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_ylw-pushpin2">
+		<LineStyle>
+			<color>ff5252ff</color>
+			<width>4.101</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4c5252ff</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="poly-7CB342-3701-82-nodesc">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#poly-7CB342-3701-82-nodesc-normal</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#poly-7CB342-3701-82-nodesc-highlight</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="poly-FF5252-4101-76-nodesc-highlight">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff5252ff</color>
+			<width>6.1515</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4c5252ff</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="poly-000000-1200-77-nodesc">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#poly-000000-1200-77-nodesc-normal</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#poly-000000-1200-77-nodesc-highlight</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_ylw-pushpin3">
+		<LineStyle>
+			<color>ff007cf5</color>
+			<width>3.7515</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>61007cf5</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin4">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin2</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin11</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="poly-000000-1200-77-nodesc-normal">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff000000</color>
+			<width>1.2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4dff0000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin10">
+		<LineStyle>
+			<color>ff007cf5</color>
+			<width>2.501</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>61007cf5</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin2">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin00</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin2</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="poly-F57C00-2501-97-nodesc">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#poly-F57C00-2501-97-nodesc-normal</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#poly-F57C00-2501-97-nodesc-highlight</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="poly-FF5252-4101-76-nodesc-normal">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff5252ff</color>
+			<width>4.101</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4c5252ff</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin00">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin1</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin1</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_ylw-pushpin1">
+		<LineStyle>
+			<color>ffff0000</color>
+			<width>4.501</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4c485579</color>
+		</PolyStyle>
+	</Style>
+	<Style id="poly-795548-4501-76-nodesc-highlight">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ffff0000</color>
+			<width>6.7515</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4c485579</color>
+		</PolyStyle>
+	</Style>
+	<Style id="poly-795548-1200-61-nodesc-normal">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>b3ffff55</color>
+			<width>4.8</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>3dffff55</color>
+			<fill>0</fill>
+		</PolyStyle>
+	</Style>
+	<Style id="poly-F57C00-2501-97-nodesc-highlight">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff007cf5</color>
+			<width>3.7515</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>61007cf5</color>
+		</PolyStyle>
+	</Style>
+	<Style id="poly-7CB342-3701-82-nodesc-highlight">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff42b37c</color>
+			<width>5.5515</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>5242b37c</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="poly-795548-1200-61-nodesc">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#poly-795548-1200-61-nodesc-normal</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#poly-795548-1200-61-nodesc-highlight</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_ylw-pushpin00">
+		<LineStyle>
+			<color>ffff0000</color>
+			<width>4.501</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>4c485579</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin30">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin10</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin3</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="poly-795548-4501-76-nodesc">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#poly-795548-4501-76-nodesc-normal</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#poly-795548-4501-76-nodesc-highlight</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Folder>
+		<name>Topo_Export</name>
+		<open>1</open>
+		<Folder>
+			<name>Lakes</name>
+			<Placemark>
+				<name>Walchensee</name>
+				<styleUrl>#poly-000000-1200-77-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								11.3421825,47.619285,0 11.2999538,47.5692748,0 11.3984874,47.5820134,0 11.3421825,47.619285,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Kochelsee</name>
+				<styleUrl>#poly-000000-1200-77-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								11.3311962,47.6320114,0 11.368275,47.6465852,0 11.3500789,47.66369830000001,0 11.3102535,47.6549112,0 11.3311962,47.6320114,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Schliersee</name>
+				<styleUrl>#poly-000000-1200-77-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								11.8627226,47.7100614,0 11.8723356,47.7151435,0 11.869589,47.732696,0 11.8572294,47.73454329999999,0 11.8489897,47.7285394,0 11.8627226,47.7100614,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Tegernsee</name>
+				<styleUrl>#poly-000000-1200-77-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								11.7356904,47.6938157,0 11.7741425,47.6947401,0 11.7425568,47.7275437,0 11.7370636,47.7478623,0 11.7192109,47.74740060000001,0 11.7164643,47.7247723,0 11.7356904,47.6938157,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Spitzingsee</name>
+				<styleUrl>#poly-000000-1200-77-nodesc</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								11.88275579722691,47.66996467238806,0 11.87967662168295,47.66110790850669,0 11.88883189632725,47.66010086835875,0 11.89092162319943,47.66852788483028,0 11.88275579722691,47.66996467238806,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Sylvensteinspeicher</name>
+				<styleUrl>#poly-000000-1200-77-nodesc</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								11.54956565000647,47.58733395640908,0 11.50566437227674,47.56795628126661,0 11.5083150061013,47.56129338144707,0 11.53617879513807,47.57462612162601,0 11.5429233088318,47.55977030743514,0 11.54691023471848,47.56226115788313,0 11.54419089487176,47.57430413000399,0 11.55928363084709,47.58192802744448,0 11.58548264241585,47.58345209289341,0 11.54956565000647,47.58733395640908,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Achensee</name>
+				<styleUrl>#poly-000000-1200-77-nodesc</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								11.70107764357481,47.49649760802843,0 11.70143198464915,47.43309327763742,0 11.73743238933625,47.42372356296083,0 11.74169445163751,47.43064024210054,0 11.71761392701061,47.44215724111811,0 11.71381859143245,47.50249437201727,0 11.70107764357481,47.49649760802843,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Plansee</name>
+				<styleUrl>#poly-000000-1200-77-nodesc</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								10.84434654093816,47.48714246967265,0 10.80000233081975,47.47375724521249,0 10.78503127903246,47.47429204557009,0 10.79657708278812,47.46140927676202,0 10.85353746912536,47.48311882303156,0 10.84434654093816,47.48714246967265,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Heiterwanger See</name>
+				<styleUrl>#poly-000000-1200-77-nodesc</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								10.78945202261705,47.46175342573756,0 10.75702777321561,47.45729412427595,0 10.77069725247659,47.45216686434275,0 10.78971483327147,47.45457955349201,0 10.78945202261705,47.46175342573756,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Mountains</name>
+			<Placemark>
+				<name>Loferer Steinberge</name>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								12.598452,47.559297,0 12.592145,47.54684600000001,0 12.599294,47.53867900000001,0 12.61943,47.525326,0 12.643573,47.52405,0 12.670394,47.524939,0 12.700453,47.530936,0 12.712193,47.541185,0 12.716611,47.54875800000001,0 12.675788,47.57284500000001,0 12.629266,47.573473,0 12.607962,47.568745,0 12.598452,47.559297,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Daniel</name>
+				<open>1</open>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								10.9009252210773,47.4441446810926,0 10.83807683124483,47.45273509604097,0 10.80076949836496,47.44279497852797,0 10.81843401266781,47.43076785043613,0 10.87105956252043,47.41930516722429,0 10.89730855690899,47.42504419304545,0 10.9009252210773,47.4441446810926,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Leoganger Steinberge</name>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								12.68733114700868,47.4687939265674,0 12.707569,47.460352,0 12.734789,47.458019,0 12.764194,47.46212200000001,0 12.79515,47.46297100000001,0 12.811844,47.470499,0 12.803174,47.483498,0 12.752816,47.493437,0 12.738689,47.50189699999999,0 12.733976,47.510967,0 12.718113,47.516896,0 12.69885629551343,47.49881734275355,0 12.68733114700868,47.4687939265674,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Pinzgauer Spaziergang</name>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								12.740975,47.340962,0 12.697637,47.345679,0 12.442925,47.349694,0 12.424671,47.315411,0 12.748224,47.309157,0 12.740975,47.340962,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Steinplatte</name>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								12.653539,47.583164,0 12.669951,47.580347,0 12.668163,47.588941,0 12.589287,47.614321,0 12.566318,47.619185,0 12.536794,47.63344599999999,0 12.536461,47.61136,0 12.541779,47.599884,0 12.581257,47.588065,0 12.605737,47.591046,0 12.653539,47.583164,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Steinernes Meer</name>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								13.134398,47.437506,0 13.112023,47.496374,0 13.037414,47.607456,0 12.962531,47.56901,0 12.808216,47.63692700000001,0 12.767612,47.608136,0 12.771834,47.57120200000001,0 12.892422,47.449222,0 12.947913,47.433373,0 13.073603,47.40231,0 13.134398,47.437506,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Dachstein</name>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								13.755929,47.443181,0 13.796014,47.500581,0 13.74877,47.58520899999999,0 13.649177,47.532669,0 13.594214,47.59303600000001,0 13.474075,47.521869,0 13.550116,47.471469,0 13.619907,47.45939599999999,0 13.647404,47.437739,0 13.755929,47.443181,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Zillertaler</name>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								12.252355,47.18877,0 11.875333,47.137901,0 11.544804,47.003723,0 11.529784,46.894426,0 11.771778,46.937345,0 12.264989,47.112712,0 12.252355,47.18877,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Wilder Kaiser</name>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								12.283369,47.575595,0 12.222415,47.556712,0 12.244989,47.552357,0 12.275214,47.55702899999999,0 12.282904,47.547489,0 12.299741,47.546768,0 12.360181,47.553007,0 12.373011,47.55985100000001,0 12.354663,47.575631,0 12.283369,47.575595,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Zahmer Kaiser</name>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								12.180245,47.55803,0 12.240825,47.598555,0 12.289849,47.589693,0 12.319174,47.598667,0 12.349021,47.632524,0 12.329435,47.630797,0 12.304152,47.61215,0 12.287486,47.617859,0 12.257935,47.619202,0 12.193975,47.595317,0 12.175118,47.57635000000001,0 12.180245,47.55803,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Tennengebirge</name>
+				<description>Bischling im Süden ist meist besser</description>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								13.2041463,47.5747823,0 13.1829821,47.5548856,0 13.1894259,47.5156734,0 13.2245712,47.4892412,0 13.300357,47.4952228,0 13.3713734,47.5187629,0 13.2728344,47.5628291,0 13.2041463,47.5747823,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Hundstein</name>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								12.84421143663323,47.30517566915676,0 12.96760417038012,47.31062105797927,0 13.0019949330573,47.3469174715844,0 12.97843278497966,47.37634063531948,0 12.87876065249193,47.38146675893238,0 12.85301290120787,47.35647562525651,0 12.84421143663323,47.30517566915676,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Dientener</name>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								13.0080365,47.3791168,0 13.03368581974363,47.32133157242938,0 13.11178121154755,47.36076989647562,0 13.08463448083943,47.38909385332794,0 13.0080365,47.3791168,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Hochgrundeck</name>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								13.22984658853629,47.34772021440397,0 13.35556962794382,47.3695710120392,0 13.38610128937731,47.40797389839986,0 13.24049207500451,47.4125044972039,0 13.22984658853629,47.34772021440397,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Rossbrand</name>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								13.4014843,47.4167649,0 13.4172772,47.38469599999999,0 13.5614727,47.405148,0 13.5580395,47.4260566,0 13.5003613,47.4334888,0 13.4014843,47.4167649,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Grossglockner Massiv</name>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								12.6513115,47.0114537,0 12.7749077,47.032518,0 12.7378289,47.1192626,0 12.6265923,47.1096832,0 12.6513115,47.0114537,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Nordkette</name>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								11.3116407,47.28332309999999,0 11.4824144,47.3177706,0 11.4206192,47.3314776,0 11.2716171,47.30587570000001,0 11.3116407,47.28332309999999,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Bettelwurf</name>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								11.3417108,47.3442354,0 11.5126856,47.3270177,0 11.5689905,47.34609640000001,0 11.4632471,47.3572612,0 11.3245447,47.37167890000001,0 11.3417108,47.3442354,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Hochnissl</name>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								11.6486414,47.35144649999999,0 11.6881235,47.37307389999999,0 11.5291651,47.3846979,0 11.4419611,47.4195546,0 11.3451441,47.42234209999999,0 11.3169916,47.3953898,0 11.3513239,47.3795837,0 11.6486414,47.35144649999999,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Reither Spitze</name>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								11.2682398,47.3093289,0 11.3307245,47.3372559,0 11.2984522,47.36144740000001,0 11.2030085,47.3433048,0 11.1988886,47.3237597,0 11.2682398,47.3093289,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Mieminger Kette</name>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								11.0676476,47.3338832,0 11.0384652,47.3631926,0 10.9104058,47.3752837,0 10.913839,47.3424916,0 11.0676476,47.3338832,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Wannig</name>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								10.8561608,47.3217826,0 10.9018227,47.3455159,0 10.88191,47.3606345,0 10.8321282,47.3420263,0 10.8561608,47.3217826,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Rofan</name>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								11.7475285,47.4662618,0 11.7464985,47.4483875,0 11.77664938275844,47.41675605100309,0 11.81785760538718,47.43678559300437,0 11.80609830345608,47.46454606995574,0 11.7475285,47.4662618,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Märzengrund</name>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								11.9019756,47.2994397,0 12.0125256,47.32341569999999,0 11.9957028,47.3569174,0 11.9036923,47.36482449999999,0 11.9019756,47.2994397,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Voldöpp</name>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								11.8781706,47.4603602,0 11.9667478,47.4877433,0 11.9537016,47.50444460000001,0 11.8733641,47.4812469,0 11.8781706,47.4603602,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Kreuzjoch</name>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								11.9436199,47.256058,0 11.9793254,47.22249229999999,0 12.0438701,47.2420749,0 12.0411235,47.2700374,0 12.0081646,47.2886709,0 11.962846,47.28308149999999,0 11.9436199,47.256058,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Tschirgant</name>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								10.7596557,47.24528289999999,0 10.7922714,47.22593470000001,0 10.8966415,47.2690506,0 10.9028213,47.293739,0 10.8756988,47.3056133,0 10.7596557,47.24528289999999,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Stanser Joch</name>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								11.7583825,47.4041867,0 11.6540123,47.4241666,0 11.6162468,47.3830369,0 11.7103173,47.378155,0 11.7583825,47.4041867,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Bärenkopf</name>
+				<description>guter Prallhang bei Nordwind im Achental. Komm man meist auch tief gut wieder weg.</description>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								11.710109,47.4144408,0 11.7207521,47.41223370000001,0 11.7368882,47.4225715,0 11.6925996,47.4365069,0 11.6896813,47.42837829999999,0 11.710109,47.4144408,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Kellerjoch</name>
+				<description>oft Prallhang, da Wind aus Inntal und Achental auf diesen Hang strömt</description>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								11.7673869,47.3011901,0 11.8326182,47.34587310000001,0 11.8326182,47.3682004,0 11.8051524,47.3807554,0 11.7358012,47.3267943,0 11.7673869,47.3011901,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Venet</name>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								10.7207348,47.2045385,0 10.6040051,47.1440929,0 10.6345608,47.1235398,0 10.7530072,47.1912417,0 10.7207348,47.2045385,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Hexenkopf</name>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								10.6464623,47.0857649,0 10.548272,47.1147444,0 10.416436,47.05864079999999,0 10.513253,46.9888964,0 10.6464623,47.0857649,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Muttler</name>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								10.4325511,46.9185397,0 10.3734995,46.9269811,0 10.3374507,46.914553,0 10.3326441,46.8842915,0 10.3470637,46.8535432,0 10.3971888,46.84602949999999,0 10.434611,46.8751392,0 10.4325511,46.9185397,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Mugl</name>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								10.5010004,46.9808967,0 10.4695864,46.9827705,0 10.4496737,46.9739865,0 10.4573984,46.9578201,0 10.4860659,46.9519616,0 10.5025454,46.9648496,0 10.5010004,46.9808967,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Piz Nuna</name>
+				<description>Prallhang auf der Südseite überm Ort Zernez erlaubt öfter auch aus tiefer Höhe wegzukommen (bei Maloja Wind = Südwind)</description>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								10.0968435,46.7232366,0 10.2080801,46.67708709999999,0 10.2307394,46.7175877,0 10.1977804,46.75711710000001,0 10.0982168,46.7552355,0 10.0968435,46.7232366,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Kaunergrat</name>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								10.6965516,47.0667655,0 10.5969879,46.9497107,0 10.6532929,46.8929641,0 10.7253907,46.9145443,0 10.741198,47.05524550000001,0 10.6965516,47.0667655,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Crasta Mora</name>
+				<description>Prallhang auf Süd/Talseite bei Maloja Wind (Südwind)</description>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								9.908962300000001,46.5790434,0 9.869823500000001,46.58541460000001,0 9.8015022,46.5733795,0 9.802875500000001,46.5641743,0 9.8880196,46.5618138,0 9.908962300000001,46.5790434,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Piz Quattervals</name>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								10.0984841,46.6849685,0 10.0191766,46.618982,0 10.1369363,46.5687311,0 10.1654321,46.61426549999999,0 10.1367865,46.670593,0 10.0984841,46.6849685,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Muottas</name>
+				<description>Prallhang bei Maloja Wind (Südwind)</description>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								9.8903874,46.51308880000001,0 9.9278096,46.5094855,0 9.9333028,46.5172233,0 9.8963956,46.5349394,0 9.8903874,46.51308880000001,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Corvatsch</name>
+				<description>Oft der südlichste Punkt, der manchmal noch in der guten Luftmasse liegt. Aber nicht zuverlässig.</description>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								9.8096982,46.44490040000001,0 9.771246100000001,46.4115342,0 9.805235,46.3679617,0 9.8454038,46.4046691,0 9.872183,46.4782461,0 9.825491100000001,46.462167,0 9.8096982,46.44490040000001,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Piz Bernina</name>
+				<description>Thermisch geht hier nicht viel. Schönes sightseeing.</description>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								9.864472299999999,46.4101684,0 9.8325432,46.3585395,0 9.9832386,46.3325081,0 10.0241173,46.3850706,0 9.864472299999999,46.4101684,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Piz Schalambert</name>
+				<description>thermisch gut am Nachmittag</description>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								10.4739063,46.8498537,0 10.3815525,46.8040477,0 10.4285877,46.7784262,0 10.4749363,46.813212,0 10.4739063,46.8498537,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Acherkogel</name>
+				<description>wichtiger Endanflugbart-Berg um nach Königsdorf zurückzukommen</description>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								10.9357382,47.2059394,0 10.9573675,47.1457289,0 11.040795,47.1707082,0 11.0013128,47.2033737,0 10.9357382,47.2059394,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Blomberg und Zwiesel</name>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								11.4484272,47.717777,0 11.4975223,47.7116556,0 11.5193233,47.7237822,0 11.508852,47.7364831,0 11.4566669,47.7334814,0 11.4484272,47.717777,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Fockenstein</name>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								11.6215899,47.7081741,0 11.5958407,47.7033224,0 11.6023638,47.67767,0 11.6246798,47.66981000000001,0 11.6590121,47.68113730000001,0 11.6603854,47.6987013,0 11.6215899,47.7081741,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Hirschberg</name>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								11.68581503095678,47.66178534907116,0 11.68285364469576,47.65740064699294,0 11.69998287641013,47.64741575650989,0 11.72426612897534,47.66111897051224,0 11.70226274423837,47.67546978252795,0 11.68581503095678,47.66178534907116,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Roß und Buchstein</name>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								11.6192117,47.65657579999999,0 11.63102950865332,47.64100550761259,0 11.68044413362724,47.66140271206186,0 11.68071994738269,47.67391623148367,0 11.6192117,47.65657579999999,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Risserkogel</name>
+				<description>Erste zuverlässiger Bart morgens von Königsdorf aus.</description>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								11.7959737,47.6754867,0 11.764903,47.656643,0 11.7623281,47.6339753,0 11.8356275,47.6373298,0 11.7959737,47.6754867,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Rotwand</name>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								11.93418558364418,47.65152878881307,0 11.92592500096149,47.65223113294955,0 11.92443595651095,47.6463954071568,0 11.93898445186738,47.64392325512809,0 11.94494589014332,47.65222041215702,0 11.93418558364418,47.65152878881307,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Sonnenwendjoch</name>
+				<description>Hier ausreichend Höhe machen zum Sprung zum Kaiser</description>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								11.8898532,47.600607,0 11.9499347,47.5874098,0 12.0155094,47.5969029,0 11.9986865,47.61657810000001,0 11.9365451,47.61449520000001,0 11.8898532,47.600607,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Marolschneid</name>
+				<description>hier spätestens Höhen holen zum Sprung zum Kaiser</description>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								11.96254508261737,47.64820490481507,0 11.94515366819708,47.64391316174731,0 11.94693745817431,47.64196003841698,0 11.98664184528814,47.64077600806064,0 11.98721122841287,47.64608696481419,0 11.96254508261737,47.64820490481507,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Traithen</name>
+				<description>bei frühem Westabflug aus Unterwössen oft der erste Bart.</description>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								12.0876857,47.6543791,0 12.0276042,47.6531071,0 12.0191928,47.6410798,0 12.0552417,47.6309007,0 12.1060535,47.6369158,0 12.1146366,47.6498693,0 12.0876857,47.6543791,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Wendelstein</name>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								12.02603207552598,47.7392612291708,0 12.00748713400504,47.70132361505786,0 12.0224696,47.6906849,0 12.05441264862023,47.69852689517669,0 12.05979162802192,47.71812295570125,0 12.04129654263531,47.74673123304991,0 12.02603207552598,47.7392612291708,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Latschenkopf</name>
+				<description>zuverlässiger Bergrücken, der aber in Wirklichkeit nicht Latschenkopf heisst.</description>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								11.5735809,47.6462806,0 11.5107528,47.6436206,0 11.4788238,47.6363338,0 11.483287,47.6236085,0 11.5167609,47.6310127,0 11.5653411,47.6371435,0 11.5735809,47.6462806,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Benediktenwand</name>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								11.4511115,47.65507849999999,0 11.4532572,47.6496436,0 11.48645687053367,47.64914066901915,0 11.53360579289009,47.65901851886554,0 11.53346421675072,47.66551588661024,0 11.4511115,47.65507849999999,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Herzogstand</name>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								11.28340811202891,47.61784526757513,0 11.262414,47.6111506,0 11.30154658092392,47.59561089788563,0 11.3293619,47.60814169999999,0 11.33356352636707,47.61598142214608,0 11.28340811202891,47.61784526757513,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Heimgarten</name>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								11.2531443,47.6194823,0 11.21839519653107,47.61172108688694,0 11.20190726273852,47.59707424267883,0 11.24012106053085,47.59261718208504,0 11.25619479178626,47.60123836248686,0 11.2531443,47.6194823,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Sojern</name>
+				<description>Hufeisenform mit Nord- und Südteil</description>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								11.42203694191769,47.51666068933963,0 11.41226372704523,47.52183351367955,0 11.35859416228886,47.49565409707327,0 11.3486100274449,47.5086435449489,0 11.43279935047183,47.54429556877541,0 11.38704364648636,47.54186519344168,0 11.31895012803535,47.50867261740623,0 11.3098371,47.49292560000001,0 11.3330114,47.47656870000001,0 11.3640821,47.4730878,0 11.42203694191769,47.51666068933963,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Hoch Unnutz</name>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								11.727669,47.5410265,0 11.7201159,47.5168016,0 11.73453720149091,47.50125198304434,0 11.75795492450839,47.50807560490145,0 11.75530205463356,47.52143191206102,0 11.74480612232119,47.54162203800519,0 11.727669,47.5410265,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Guffert</name>
+				<description>Oft ist hier die Basis höher als im Norden. Man die hohe Basis hier aber auch</description>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								11.7721531,47.5460311,0 11.8095753,47.5287635,0 11.9036457,47.534095,0 11.9014141,47.5451041,0 11.7893193,47.5513609,0 11.7721531,47.5460311,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Scharfreiter</name>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								11.55313313342985,47.50811392238255,0 11.55566528247651,47.51604784765257,0 11.48753019264166,47.51691522496597,0 11.4728518,47.5019667,0 11.51633212581525,47.49972184928053,0 11.55313313342985,47.50811392238255,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Hohe Kiste</name>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								11.20712546453354,47.57325436334126,0 11.14547525134051,47.52781642819529,0 11.24240199664158,47.53571649954301,0 11.24616293781803,47.56289594586514,0 11.20712546453354,47.57325436334126,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Wank</name>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								11.16212489594059,47.50232118300418,0 11.14897897669486,47.51599743882936,0 11.1324358081148,47.51837482534562,0 11.12971963787871,47.50500343504708,0 11.14847087191093,47.49792971270789,0 11.16212489594059,47.50232118300418,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Kramer</name>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								11.06440436786433,47.51371855002083,0 11.0125964480078,47.51430110261191,0 10.96569529776178,47.49498992011457,0 10.98219907539663,47.48610159001584,0 11.0377260484114,47.49135301509688,0 11.07535840515235,47.51309693702811,0 11.06440436786433,47.51371855002083,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Ettaler Mapdel</name>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								11.13985429634324,47.57780310075132,0 11.12834168051632,47.59234982541453,0 11.09503907151509,47.58937955206115,0 11.08273528362371,47.58160255775043,0 11.10014265631216,47.57528242729153,0 11.11579650165049,47.56354824360052,0 11.13985429634324,47.57780310075132,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Wettersteingrad</name>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								11.1915448937164,47.43109083201524,0 11.11847176319862,47.41594575470911,0 11.02707401252217,47.39292382070257,0 11.01180660844825,47.38435228758969,0 11.12730117493301,47.38010631270948,0 11.19694137188615,47.4210565243617,0 11.1915448937164,47.43109083201524,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Zugspitze</name>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								11.02587203072933,47.44853782013356,0 10.9658957778798,47.42971949893493,0 10.9526837690306,47.39862093394185,0 11.00409117612148,47.38814890542463,0 11.06856245420462,47.41978005935762,0 11.04030968782753,47.43402740036308,0 11.02587203072933,47.44853782013356,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Bayern Preissenfalle</name>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								12.03028991562298,47.52234386946928,0 12.13820740748627,47.5749055352736,0 12.12384342555248,47.58285994121799,0 12.01729984967208,47.53490313303837,0 12.03028991562298,47.52234386946928,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Westliches Karwendel</name>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								11.29310906701134,47.39442754240779,0 11.33036063434909,47.43008766238075,0 11.39756369432386,47.43964432220574,0 11.46965715718331,47.42381328992455,0 11.46746147378637,47.43942146014595,0 11.42016052294231,47.45168973638019,0 11.33723844535385,47.45668594603258,0 11.27167973761014,47.43277730598606,0 11.27194029921573,47.40196256549482,0 11.29310906701134,47.39442754240779,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Arnspitze</name>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								11.23954599999141,47.42103668196501,0 11.17512223700686,47.38938060373517,0 11.18874425520778,47.38217008691718,0 11.24309305873791,47.39006446344359,0 11.23954599999141,47.42103668196501,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Heiterwand</name>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								10.66344311254437,47.29784302810661,0 10.71518839034262,47.29048598137481,0 10.77744537981786,47.30295672203756,0 10.75048440717903,47.3208688894236,0 10.66344311254437,47.29784302810661,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Wallerberg</name>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								12.57880160264381,47.50684440910011,0 12.56695595396024,47.51765666228725,0 12.53688564524122,47.51796085054447,0 12.52830941288168,47.50995558379815,0 12.55497858264503,47.50292956049903,0 12.57880160264381,47.50684440910011,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Kirchberg</name>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								12.51014449387613,47.52794136095249,0 12.54588709079917,47.52111495632624,0 12.56651317381611,47.53338116720105,0 12.56383640302547,47.55771969770274,0 12.51104593376418,47.56036672453396,0 12.50331111494027,47.54407597097704,0 12.51014449387613,47.52794136095249,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Bischling</name>
+				<description>Thermisch sehr gut, oft sind dort Paraglider</description>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								13.28830417398068,47.47079907386489,0 13.28675154975522,47.4459277895195,0 13.30803006281843,47.43852444286555,0 13.30694912116816,47.46551279964008,0 13.28830417398068,47.47079907386489,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Rapoldsberg</name>
+				<description>soll thermisch sehr gut sein (oberhalb Hangkante)</description>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								13.13298229848897,47.40373125725203,0 13.12607459046335,47.39100625834227,0 13.18217967031565,47.39791598168239,0 13.18625602295519,47.41263057733992,0 13.13298229848897,47.40373125725203,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Rittisberg</name>
+				<description>thermisch gut, wenn man zu tief für den Dachstein ist</description>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								13.5679697287412,47.42483081089422,0 13.57265297890353,47.40828829182463,0 13.62373814299271,47.41362300462783,0 13.6147389993627,47.42572875990142,0 13.5679697287412,47.42483081089422,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Grimming</name>
+				<description>thermisch meist erst ab 12 Uhr</description>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								14.02259541085256,47.5354898909358,0 13.98768474176102,47.51934907921988,0 13.94903254421632,47.50511699687577,0 13.96040086454816,47.49608920936599,0 14.01148702070171,47.50088853652516,0 14.05059095531654,47.53002009503346,0 14.02259541085256,47.5354898909358,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Mölbeck</name>
+				<description>geht schon sehr früh am Tag</description>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								14.15121655207589,47.4735019301609,0 14.16837189313658,47.47514717944341,0 14.17282822023681,47.48311892584612,0 14.1557950440534,47.48909588641939,0 14.14497679934898,47.48524243877016,0 14.15121655207589,47.4735019301609,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Stoderzinken</name>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								13.9003042026862,47.4666905743107,0 13.91469305022831,47.49055471052851,0 13.81977148283652,47.47349514022918,0 13.80654490774189,47.44582473228872,0 13.9003042026862,47.4666905743107,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Hohe Trett</name>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								14.3206995,47.5271711,0 14.1703241,47.5415424,0 14.1545313,47.50537499999999,0 14.2678278,47.487282,0 14.3206995,47.5271711,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Dürren Schöberl</name>
+				<styleUrl>#msn_ylw-pushpin00</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								14.3099604674861,47.54953798260405,0 14.31131293355344,47.54995559242986,0 14.31108645979647,47.54911900264885,0 14.3107378414805,47.54817633474824,0 14.31135256257153,47.54683681960213,0 14.31177950758413,47.54581338395007,0 14.45985112721647,47.51835893629768,0 14.4470423,47.5674933,0 14.3577784,47.5827798,0 14.3099604674861,47.54953798260405,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Eisenerzer Alpen</name>
+				<styleUrl>#msn_ylw-pushpin2</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								14.5802515,47.505607,0 14.6049707,47.4796254,0 14.8035105,47.41320329999999,0 14.867956,47.4766089,0 14.9428146,47.4615256,0 14.9716395,47.4399324,0 15.0011652,47.44225440000001,0 14.95867324261589,47.50444606187401,0 14.7821253,47.5243891,0 14.5802515,47.505607,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Gößeck</name>
+				<description>fliegerisch weniger relevant, aber markante Berg</description>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								14.856283,47.444112,0 14.877569,47.403695,0 14.9160212,47.40787749999999,0 14.9482935,47.44782690000001,0 14.8913019,47.4617556,0 14.856283,47.444112,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Hochschwab</name>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								14.9866741,47.61802449999999,0 14.9552212,47.59639919999999,0 14.9962587,47.5773092,0 15.1281231,47.59047799999999,0 15.1634854,47.5761201,0 15.239703,47.6052947,0 15.263049,47.6254296,0 15.2465695,47.65318910000001,0 14.9866741,47.61802449999999,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Veitsch</name>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								15.5040678,47.6513432,0 15.4117141,47.6672989,0 15.3639922,47.6275163,0 15.4333434,47.62844190000001,0 15.5040678,47.6513432,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Schneealpe</name>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								15.4974056,47.7305598,0 15.4977489,47.68551000000001,0 15.550964,47.6889767,0 15.5887295,47.6677103,0 15.6347347,47.69175,0 15.6093288,47.72316969999999,0 15.4974056,47.7305598,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Raxalpe</name>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								15.6632305,47.68943889999999,0 15.7047726,47.6758018,0 15.7796169,47.7190123,0 15.733955,47.74349,0 15.6707836,47.7317144,0 15.6632305,47.68943889999999,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Schneeberg</name>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								15.7370171,47.7765408,0 15.7926354,47.7391506,0 15.8637032,47.7520786,0 15.8300576,47.7922275,0 15.7493768,47.7998384,0 15.7370171,47.7765408,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Admonter Reichenstein</name>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								14.4907647,47.5548166,0 14.5113641,47.5366247,0 14.568184,47.5353498,0 14.5767671,47.5507616,0 14.5135957,47.563273,0 14.4907647,47.5548166,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Hochtor</name>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								14.5974523,47.5456925,0 14.639681,47.55160160000001,0 14.6597653,47.5755788,0 14.6462041,47.5825267,0 14.6247465,47.5765052,0 14.5974523,47.5456925,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Kalte Mauer</name>
+				<description>1929m</description>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								14.8579671,47.6121639,0 14.8308446,47.5887822,0 14.8816564,47.5748872,0 14.9252584,47.5885507,0 14.9118688,47.6119324,0 14.8579671,47.6121639,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Kräuterin</name>
+				<description>Am Nachmittag eine sehr sichere Bank</description>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								15.0367289,47.6762545,0 15.0629931,47.6653886,0 15.0969821,47.6806464,0 15.1105433,47.7162308,0 15.0952655,47.7245457,0 15.0367289,47.6762545,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Türnach</name>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								15.080114,47.6639339,0 15.1010567,47.6479773,0 15.1412254,47.6508683,0 15.1762444,47.672026,0 15.15616,47.6835839,0 15.1254326,47.6713324,0 15.080114,47.6639339,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Zeller Staritzen</name>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								15.1933647,47.6932211,0 15.1993728,47.6617833,0 15.2790237,47.67530850000001,0 15.2826286,47.7215219,0 15.2663208,47.7059294,0 15.1933647,47.6932211,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Tonion</name>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								15.3442398,47.7252495,0 15.4014031,47.6942932,0 15.3952233,47.7175121,0 15.3602043,47.7297528,0 15.3442398,47.7252495,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Göller</name>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								15.4804905,47.7930613,0 15.4793748,47.7847573,0 15.5102738,47.78867889999999,0 15.5066689,47.7970975,0 15.4804905,47.7930613,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Gippel</name>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								15.5380004,47.7872364,0 15.5343956,47.7785853,0 15.6748146,47.810068,0 15.6670898,47.8166389,0 15.6270927,47.8173305,0 15.5791992,47.8021127,0 15.5380004,47.7872364,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Weissenbacher Wände</name>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								14.1652849,47.5899689,0 14.2684534,47.61358140000001,0 14.26914,47.636605,0 14.1623666,47.6040914,0 14.1652849,47.5899689,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Haller Mauer</name>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								14.3843434,47.65556659999999,0 14.3963597,47.63983870000001,0 14.4521496,47.63833509999999,0 14.4943783,47.6242218,0 14.5134327,47.645159,0 14.4578144,47.6667814,0 14.3843434,47.65556659999999,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Buschstein</name>
+				<description>geht meist schlechter als der Tamischbachturm</description>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								14.5694443,47.6064519,0 14.609613,47.5964975,0 14.6353622,47.6087666,0 14.6353622,47.6323706,0 14.5951935,47.6305197,0 14.5694443,47.6064519,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Tamischbachturm</name>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								14.6872406,47.6267971,0 14.6790008,47.6117549,0 14.6989135,47.59786600000001,0 14.7256927,47.6066627,0 14.7250061,47.62529300000001,0 14.6872406,47.6267971,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Hochkar</name>
+				<description>Außenlanden in der Nähe ist problematisch</description>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								14.8844069,47.7130297,0 14.8857802,47.7006696,0 14.9213141,47.70043849999999,0 14.9906653,47.7338158,0 14.9659461,47.7536703,0 14.8844069,47.7130297,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Dürrenstein</name>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								15.0124829,47.8005378,0 15.0528233,47.76051080000001,0 15.1053517,47.8001919,0 15.0124829,47.8005378,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Ötscher</name>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								15.1576241,47.8458101,0 15.2810486,47.8641248,0 15.246373,47.8818573,0 15.1423462,47.8584814,0 15.1576241,47.8458101,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Gumpeneck</name>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								13.9979548,47.39603689999999,0 14.0370936,47.3568622,0 14.0863604,47.3477909,0 14.0745158,47.402079,0 14.0240473,47.4060293,0 13.9979548,47.39603689999999,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Hochwildstelle</name>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								13.7296116,47.35833409999999,0 13.8490879,47.2871195,0 13.9153493,47.34740219999999,0 13.9232457,47.38391070000001,0 13.7296116,47.35833409999999,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Planeralm</name>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								14.2350414,47.4256298,0 14.1450908,47.4161057,0 14.1430309,47.3754347,0 14.2140987,47.3682269,0 14.2350414,47.4256298,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Bösenstein</name>
+				<styleUrl>#poly-795548-4501-76-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								14.3901253,47.4782002,0 14.3856621,47.4296811,0 14.4357873,47.4259649,0 14.4148446,47.4744874,0 14.3901253,47.4782002,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Mountains_large_scale</name>
+			<Placemark>
+				<name>Hohe Tauern</name>
+				<styleUrl>#poly-795548-1200-61-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								12.1242659,46.9981044,0 12.5967297,46.9456226,0 13.0293634,46.7982109,0 13.4194206,46.8649244,0 13.6171975,47.1711154,0 13.4523846,47.2560127,0 12.342643,47.1739175,0 12.1242659,46.9981044,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Niedere Tauern</name>
+				<styleUrl>#poly-795548-1200-61-nodesc</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								13.52245016847571,47.2772327724869,0 13.72248387409484,47.20036304541419,0 14.81531090757422,47.34193238172804,0 14.21041420779663,47.51587669945296,0 13.52245016847571,47.2772327724869,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Gesäuse</name>
+				<styleUrl>#poly-795548-1200-61-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								14.5450955,47.58391619999999,0 14.4681912,47.55704660000001,0 14.4932538,47.5241359,0 14.7229367,47.53294499999999,0 14.7322064,47.6309047,0 14.6038037,47.65218609999999,0 14.5450955,47.58391619999999,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Valleys_not_landable</name>
+			<Placemark>
+				<name>Vinschgau (Unlandbar)</name>
+				<styleUrl>#poly-FF5252-4101-76-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								11.0608352,46.6925469,0 10.884936,46.642424,0 10.6145076,46.64787030000001,0 10.5634879,46.7103291,0 10.5021687,46.90936299999999,0 10.4934257,46.88966880000001,0 10.5182218,46.7804742,0 10.5196228,46.687264,0 10.5757296,46.6050559,0 10.8875069,46.5958775,0 11.1016235,46.6515987,0 11.0608352,46.6925469,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Glemmtal</name>
+				<styleUrl>#poly-FF5252-4101-76-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								12.5067838,47.38075200000001,0 12.4988874,47.3595929,0 12.6334693,47.37307990000001,0 12.7745743,47.3556392,0 12.7745743,47.3849363,0 12.6444555,47.40352919999999,0 12.5067838,47.38075200000001,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Ahrntal</name>
+				<styleUrl>#poly-FF5252-4101-76-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								12.2043054,47.0895843,0 11.858236,46.9688313,0 11.900808,46.906945,0 11.976339,46.91914040000001,0 11.985952,46.9688313,0 12.2194116,47.07555719999999,0 12.2043054,47.0895843,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Brenner (Wipptal)</name>
+				<description>Immer Nord oder Südtal da Ausgleichsströmung zw. Nord und Südalpen</description>
+				<styleUrl>#poly-FF5252-4101-76-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								11.4873043,46.99211240000001,0 11.5319362,47.0164616,0 11.4976039,47.0931825,0 11.4440456,47.1996599,0 11.377441,47.2117885,0 11.4186397,47.1660585,0 11.4873043,46.99211240000001,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Stubaier Tal</name>
+				<styleUrl>#poly-FF5252-4101-76-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								11.3822475,47.1987268,0 11.1982265,47.03471620000001,0 11.2318721,47.0183342,0 11.4001003,47.1744608,0 11.3822475,47.1987268,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Tuxertal</name>
+				<styleUrl>#poly-FF5252-4101-76-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								11.799728,47.1576548,0 11.7187038,47.1763278,0 11.6479793,47.1020638,0 11.6816249,47.0899101,0 11.7399898,47.14971679999999,0 11.8127742,47.1385082,0 11.799728,47.1576548,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Unterengadin zw. Tösens und Zernez</name>
+				<styleUrl>#poly-FF5252-4101-76-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								10.5873749,46.9839172,0 10.5635595,46.9967559,0 10.4934465,46.95175110000001,0 10.4728471,46.9114265,0 10.4591142,46.88656019999999,0 10.3966295,46.8405506,0 10.2977525,46.80343249999999,0 10.2023088,46.78039700000001,0 10.1151048,46.7775757,0 10.075966,46.7653481,0 10.0676119,46.7300121,0 10.0902712,46.72365789999999,0 10.0982168,46.7552355,0 10.1171647,46.7615853,0 10.1981889,46.7644074,0 10.3107988,46.7879199,0 10.4131089,46.8278676,0 10.48864,46.8781124,0 10.509926,46.9273724,0 10.5873749,46.9839172,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Oberengadin zw. Samaden und Zernez</name>
+				<styleUrl>#poly-FF5252-4101-76-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								10.0799716,46.6982337,0 9.9909503,46.6265424,0 9.8952925,46.56350030000001,0 9.914518599999999,46.5531131,0 10.0108754,46.6198788,0 10.0964796,46.69223150000001,0 10.0799716,46.6982337,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Kaunertal</name>
+				<styleUrl>#poly-FF5252-4101-76-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								10.6740873,47.0719228,0 10.7434385,47.0569556,0 10.7246891,46.8909477,0 10.749065,46.8893053,0 10.762798,47.0682633,0 10.6821171,47.0818246,0 10.6740873,47.0719228,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Pitztal</name>
+				<styleUrl>#poly-FF5252-4101-76-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								10.7580214,47.2096947,0 10.7230024,47.1543916,0 10.7628279,47.1200607,0 10.8167296,47.0859414,0 10.8540659,47.0503967,0 10.8646326,47.0534677,0 10.8311586,47.0923998,0 10.7796602,47.1300187,0 10.7484178,47.153838,0 10.7765703,47.2065761,0 10.7580214,47.2096947,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Vent Tal</name>
+				<styleUrl>#poly-FF5252-4101-76-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								10.8682269,46.8548936,0 10.8754367,46.8415094,0 10.9015292,46.8443274,0 10.8912295,46.8170806,0 10.9056491,46.80815190000001,0 10.931055,46.8563023,0 11.0168857,46.9287986,0 10.9955996,46.9391137,0 10.907709,46.86404929999999,0 10.8682269,46.8548936,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Ötztal Nord</name>
+				<styleUrl>#poly-FF5252-4101-76-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								10.8474996,47.22210609999999,0 10.8734205,47.2000669,0 10.8998563,47.1983174,0 10.9058645,47.1662324,0 10.919769,47.16693260000001,0 10.9135892,47.2012332,0 10.8849218,47.2183752,0 10.8653524,47.2265361,0 10.8474996,47.22210609999999,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Pitztal</name>
+				<styleUrl>#poly-FF5252-4101-76-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								10.8623152,47.0377428,0 10.865031,46.9600216,0 10.8399684,46.9385183,0 10.8466632,46.9357053,0 10.8717258,46.95732679999999,0 10.8900936,46.9446127,0 10.8936126,46.94883159999999,0 10.8755023,46.96341919999999,0 10.8711557,47.0394392,0 10.8623152,47.0377428,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Graswangtal</name>
+				<styleUrl>#poly-FF5252-4101-76-nodesc</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								11.05984289690354,47.57885874516176,0 10.9780616576814,47.57418578378098,0 10.98060581470249,47.5627013162769,0 11.06741401330694,47.56879366501563,0 11.0989777455522,47.55932440622789,0 11.10510436825657,47.57013029422749,0 11.05984289690354,47.57885874516176,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Unlandbar zw. Zell am See und St. Johann im Pongau</name>
+				<styleUrl>#poly-FF5252-4101-76-nodesc</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								12.99999931268941,47.27923037147936,0 13.17382321117505,47.31141142838879,0 13.16329116650443,47.33652528550629,0 12.99139669906769,47.30733315570698,0 12.82714449761805,47.2977445898146,0 12.83919716335008,47.27494977883488,0 12.99999931268941,47.27923037147936,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Tal südl. Hochkar und Dürrenstein</name>
+				<styleUrl>#poly-FF5252-4101-76-nodesc</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								14.88232558558876,47.69649235486767,0 14.87578418038408,47.68620287353789,0 14.96245015200279,47.67018224262852,0 15.08996377905719,47.73475277783566,0 15.28433316177582,47.74864508688187,0 15.26700260687939,47.77336356018005,0 15.0926221542597,47.76023126075232,0 14.92599060757938,47.69299572586583,0 14.88232558558876,47.69649235486767,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Eisenerzer Becken</name>
+				<styleUrl>#msn_ylw-pushpin4</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								14.85139375120763,47.5683709907087,0 14.85535811271993,47.55620345855897,0 14.88757095095352,47.53830681534409,0 14.91808003746852,47.53946109632724,0 14.96321907758969,47.51515626121962,0 14.98686232178176,47.49643626911406,0 14.99812693055013,47.49040204380614,0 14.97851785749583,47.51481610858308,0 14.85139375120763,47.5683709907087,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Tal zw. Göller und Schneealpe</name>
+				<styleUrl>#msn_ylw-pushpin4</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								15.69376067296213,47.79929812956416,0 15.49995386749345,47.75995095487147,0 15.49914531697963,47.73935122706708,0 15.61411255141354,47.73169319092806,0 15.73986581004227,47.75623304941661,0 15.69376067296213,47.79929812956416,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Gesäusetal</name>
+				<styleUrl>#msn_ylw-pushpin4</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								14.54405673873505,47.58239008645501,0 14.53429401345993,47.57773976440449,0 14.59671466110106,47.57881121142687,0 14.72630609880833,47.59398733356721,0 14.72446475329233,47.59783822127253,0 14.63162246866764,47.59298643780833,0 14.54405673873505,47.58239008645501,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Valleys_landable</name>
+			<Placemark>
+				<name>Pustatal</name>
+				<styleUrl>#poly-7CB342-3701-82-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								11.367633,46.462531,0 11.503347,46.49674,0 11.594602,46.616657,0 11.707108,46.676923,0 11.717526,46.78249300000001,0 11.912942,46.772978,0 12.05158,46.729961,0 12.23517,46.697819,0 12.482223,46.71968500000001,0 12.79147,46.78489299999999,0 12.713466,46.83073999999999,0 12.35448,46.772679,0 12.174628,46.784279,0 12.058879,46.80466500000001,0 11.931552,46.839741,0 11.729801,46.866686,0 11.624215,46.811089,0 11.618051,46.712188,0 11.511981,46.647766,0 11.457967,46.54461299999999,0 11.338835,46.51723,0 11.367633,46.462531,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Inntal</name>
+				<styleUrl>#poly-7CB342-3701-82-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								12.18265351304229,47.60418976615568,0 12.12149939608839,47.5570156506923,0 11.6422605,47.3391898,0 11.3006544,47.27866480000001,0 11.084361,47.325694,0 10.7884792,47.22465110000001,0 10.7897884,47.2050009,0 11.0829877,47.29077530000001,0 11.4228563,47.2247062,0 11.6377973,47.2898439,0 12.180245,47.55803,0 12.175118,47.57635000000001,0 12.193975,47.595317,0 12.2497647,47.6212878,0 12.2159528,47.65696530000001,0 12.1699475,47.7341461,0 12.1177588,47.7193629,0 12.1493482,47.6962633,0 12.18265351304229,47.60418976615568,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Drautal</name>
+				<styleUrl>#poly-7CB342-3701-82-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								12.6895319,46.8874363,0 12.6346002,46.8545768,0 12.9147516,46.7267035,0 13.3830438,46.7361163,0 13.388537,46.81605879999999,0 13.3267389,46.8442454,0 13.3184992,46.78503640000001,0 13.0122553,46.7803344,0 12.6895319,46.8874363,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Zillertal</name>
+				<styleUrl>#poly-7CB342-3701-82-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								11.8184105,47.3757822,0 11.8719689,47.2519505,0 11.8019311,47.1623879,0 11.8719689,47.1474461,0 11.9214074,47.23143910000001,0 11.8966881,47.3180923,0 11.8554894,47.39530810000001,0 11.8184105,47.3757822,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Samaden</name>
+				<description>Flugplatz mit Windenschlepp, meist ohne Fschleppmöglichkeit.</description>
+				<styleUrl>#poly-7CB342-3701-82-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								9.8952925,46.56350030000001,0 9.8563624,46.5200114,0 9.878335099999999,46.5096158,0 9.914518599999999,46.5531131,0 9.8952925,46.56350030000001,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Mitterndorf Tal</name>
+				<styleUrl>#poly-7CB342-3701-82-nodesc</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								14.00848272008195,47.55450522558459,0 13.93982727100611,47.55590338693644,0 13.88977159251085,47.57484194959745,0 13.87956166235772,47.57237375376852,0 13.87480936116104,47.56352702801129,0 13.88849361090615,47.56394137309961,0 13.95207519625234,47.53597876265477,0 14.0101165350789,47.5482396374112,0 14.00848272008195,47.55450522558459,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Paltental</name>
+				<styleUrl>#poly-7CB342-3701-82-nodesc</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								14.32692703776898,47.52338170057919,0 14.40049767383132,47.51334839380063,0 14.47534851609019,47.48891987756516,0 14.55384157371485,47.48231448075633,0 14.59575126599874,47.46901812907063,0 14.59628718448625,47.47923078854331,0 14.39167287628898,47.52632058918017,0 14.32982703514889,47.53310213094989,0 14.32692703776898,47.52338170057919,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Trofaiacher Becken</name>
+				<styleUrl>#poly-7CB342-3701-82-nodesc</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								15.06042812945289,47.43159903038313,0 14.96060875618343,47.43556241673524,0 14.90819553110589,47.39698588295953,0 14.93212235176742,47.39699231076348,0 15.00253862164782,47.40425139654255,0 15.00330173031488,47.38613055568045,0 15.02010351902705,47.40245017111292,0 15.01175409569105,47.41038308434442,0 15.06042812945289,47.43159903038313,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Liesingtal</name>
+				<styleUrl>#poly-7CB342-3701-82-nodesc</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								14.77726620429637,47.40444421081126,0 14.82308896352557,47.39169394878743,0 14.84424493159735,47.39372028192622,0 14.88826560678588,47.38666087426059,0 14.91288334708003,47.38698898100634,0 14.99260831129349,47.36728612398343,0 15.00069003641465,47.3742615388315,0 14.93182664848668,47.39471432724827,0 14.87380005979279,47.39494728198797,0 14.80915430482357,47.40086638347625,0 14.76155433903909,47.42640230167415,0 14.754842974623,47.4200825969495,0 14.77726620429637,47.40444421081126,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Murtal</name>
+				<styleUrl>#poly-7CB342-3701-82-nodesc</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								14.62011385146611,47.20732667064069,0 14.74503875477143,47.13256408941601,0 15.01290856530628,47.33559864854442,0 14.99501189405839,47.34333673190335,0 14.80823670382405,47.22691078687535,0 14.62011385146611,47.20732667064069,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Mürztal</name>
+				<styleUrl>#poly-7CB342-3701-82-nodesc</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								15.54023131665867,47.53287495278592,0 15.65255686887555,47.57086148130055,0 15.64368710408947,47.58377607585996,0 15.50452897245283,47.53692750826571,0 15.40796654651652,47.49698174735425,0 15.31018916366817,47.4615168936926,0 15.32846998786163,47.44872300109186,0 15.54023131665867,47.53287495278592,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Windischgarstner Becken</name>
+				<styleUrl>#poly-7CB342-3701-82-nodesc</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								14.30629597615838,47.74410922323579,0 14.25357050627863,47.71504160963902,0 14.32944615415521,47.67127241542233,0 14.38398461431596,47.6883458696934,0 14.30629597615838,47.74410922323579,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Mooslandl</name>
+				<description>mehrere Wiesen</description>
+				<styleUrl>#poly-7CB342-3701-82-nodesc</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								14.76623874704726,47.65278078924069,0 14.74834138010812,47.64691008501232,0 14.75697069220043,47.63815533761588,0 14.77095738743685,47.63628247961847,0 14.76623874704726,47.65278078924069,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>Valleys_partly_landable</name>
+			<Placemark>
+				<name>St. Johann Pongau</name>
+				<styleUrl>#poly-F57C00-2501-97-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								13.2002972,47.421411,0 13.1707714,47.330739,0 13.2195233,47.3279466,0 13.2339428,47.42094639999999,0 13.2002972,47.421411,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Inntal nördlich Venet</name>
+				<styleUrl>#poly-F57C00-2501-97-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								10.7884792,47.22465110000001,0 10.6786159,47.2191716,0 10.5275538,47.14076410000001,0 10.5460933,47.125349,0 10.697842,47.2009802,0 10.752087,47.2103099,0 10.7897884,47.2050009,0 10.7884792,47.22465110000001,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Unterengadin bei Tösens</name>
+				<description>bei Tösens gibt es zwei gute Felder zur Auswahl. Tösens-Süd und Tösens-Nord.</description>
+				<styleUrl>#poly-F57C00-2501-97-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								10.6562567,47.1043608,0 10.6239843,47.0477783,0 10.5635595,46.9967559,0 10.5873749,46.9839172,0 10.6500769,47.0351443,0 10.690589,47.1020239,0 10.6562567,47.1043608,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Engadin bei Zernez</name>
+				<styleUrl>#poly-F57C00-2501-97-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								10.0676119,46.7300121,0 10.0799716,46.6982337,0 10.1009143,46.69164030000001,0 10.0902712,46.72365789999999,0 10.0676119,46.7300121,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Ötztal Süd</name>
+				<description>Landewiese in Huben, gut landbar</description>
+				<styleUrl>#poly-F57C00-2501-97-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								10.9735606,47.03151650000001,0 10.9879802,47.0391212,0 10.971844,47.05315779999999,0 10.9764784,47.0755506,0 10.955405,47.1059813,0 10.9361143,47.1013257,0 10.9563054,47.0690898,0 10.9522746,47.04859629999999,0 10.9735606,47.03151650000001,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Pitztal (Mitte)</name>
+				<description>2015 ist hier jemand auf einem Feld gut gelandet.</description>
+				<styleUrl>#poly-F57C00-2501-97-nodesc</styleUrl>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<tessellate>1</tessellate>
+							<coordinates>
+								10.8540659,47.0503967,0 10.8623152,47.0377428,0 10.8711557,47.0394392,0 10.8646326,47.0534677,0 10.8540659,47.0503967,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Isartal</name>
+				<styleUrl>#poly-F57C00-2501-97-nodesc</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								11.58136071438755,47.63877716579252,0 11.61432523448653,47.6406609544278,0 11.58917540185045,47.72306248921736,0 11.52356684477267,47.71334088239517,0 11.58136071438755,47.63877716579252,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Lechtal</name>
+				<styleUrl>#poly-F57C00-2501-97-nodesc</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								10.67017581338509,47.47048181265806,0 10.64382984249732,47.4444969845713,0 10.5820086637732,47.4335474252387,0 10.53310165151033,47.37323475455219,0 10.51639100512097,47.33224327110293,0 10.38442388564972,47.27747441039707,0 10.32807281065346,47.25826650854613,0 10.33204440444978,47.2427321232325,0 10.54459272044022,47.32047984303433,0 10.59810539467601,47.42152643374275,0 10.66817323730556,47.43734886743718,0 10.69706111154874,47.46271913776505,0 10.67017581338509,47.47048181265806,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Ennstal</name>
+				<styleUrl>#msn_ylw-pushpin30</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								13.92321117793149,47.42500491463077,0 14.0506358433394,47.48217953380804,0 14.22750628253799,47.5521439669434,0 14.22152187023343,47.57675762009953,0 14.14181974438475,47.55231146691584,0 14.03077576998038,47.50053961209797,0 13.87902348871611,47.43663073881814,0 13.60422786373391,47.40977193663393,0 13.36746200124908,47.37850865955443,0 13.37152196980073,47.35533996014408,0 13.92321117793149,47.42500491463077,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+	</Folder>
+</Document>
+</kml>

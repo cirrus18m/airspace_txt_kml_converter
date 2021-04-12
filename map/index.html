@@ -50,14 +50,41 @@
 				stroke: black;
 			}
 			/* Gliding hotspots */
-			circle.A, path.A {
+			circle.Good_thermals, path.Good_thermals {
 				fill: green;
 			}
-			circle.B, path.B {
+			circle.Bad_thermals, path.Bad_thermals {
 				fill: blue;
 			}
-			circle, path {
+			/* Topo for 'Lakes', 'Mountains', 'Valleys_landable', 'Valleys_not_landable', 'Valleys_partly_landable' */
+			circle.Mountains, path.Mountains {
+				fill: #784421;
+				fill-opacity:0.6;
+			}
+			circle.Mountains_large_scale, path.Mountains_large_scale {
+				stroke: #784421;
+				fill-opacity:0.05;
+				stroke-width: 3.5;
+				stroke-opacity: 1;
+			}
+			circle.Lakes, path.Lakes {
+				fill: blue;
+				fill-opacity:0.6;
+			}
+			circle.Valleys_landable, path.Valleys_landable {
+				fill: #53d1ac;
+				fill-opacity:0.6;
+			}
+			circle.Valleys_partly_landable, path.Valleys_partly_landable {
+				fill: orange;
+			}
+			circle.Valleys_not_landable, path.Valleys_not_landable {
 				fill: red;
+				fill-opacity:0.6;
+			}
+			circle, path {
+				fill: yellow;
+				fill-opacity:0.6;
 			}
 			circle.selected, path.selected {
 				stroke-width: 3.5;
@@ -68,7 +95,7 @@
 	<body>
 		<div id="wrapper">
 			<header>
-			<h1>GlidingHotspots.eu - Thermal & Wave Map</h1>
+			<h1>GlidingHotspots.eu - Thermal, Topology & Wave Map</h1>
 			<nav>
 				<ul>
 					<li><a title="" href="http://glidinghotspots.eu/?module=simple&amp;options=view;0002.xml" target="_blank">Introduction</a></li>
@@ -107,13 +134,9 @@
 			};
 
 			var overlays = {
-				"Thermal Spaces":               L.aerialOverlay(map,{'url':mapFolder+'/data2show/Thermal_Map_EU_converted.json','classes':['A', 'B']}),
-				"waves_GER_wind_east":          L.aerialOverlay(map,{'url':mapFolder+'/data2show/waves_GER_wind_east_converted.json'}), 
-				"waves_GER_wind_southeast":     L.aerialOverlay(map,{'url':mapFolder+'/data2show/waves_GER_wind_southeast_converted.json'}), 
-				"waves_GER_wind_southwest":     L.aerialOverlay(map,{'url':mapFolder+'/data2show/waves_GER_wind_southwest_converted.json'}), 
-				"waves_CZ_wind_southwest":      L.aerialOverlay(map,{'url':mapFolder+'/data2show/waves_CZ_wind_southwest_converted.json'}), 
-				"waves_FR_Alps_wind_northwest": L.aerialOverlay(map,{'url':mapFolder+'/data2show/waves_FR_Alps_wind_northwest_converted.json'}), 
-				"waves_Pyrenees_wind_north":    L.aerialOverlay(map,{'url':mapFolder+'/data2show/waves_Pyrenees_wind_north_converted.json'}), 					"waves_Pyrenees_wind_south":    L.aerialOverlay(map,{'url':mapFolder+'/data2show/waves_Pyrenees_wind_south_converted.json'}), 
+				"Thermal Spaces":               L.aerialOverlay(map,{'url':mapFolder+'/data2show/Thermal_Map_EU_converted.json','classes':['Good_thermals', 'Bad_thermals']}),
+				"Topology":                     L.aerialOverlay(map,{'url':mapFolder+'/data2show/Topo_Export_converted.json', 'classes':['Lakes', 'Mountains', 'Mountains_large_scale', 'Valleys_landable', 'Valleys_not_landable', 'Valleys_partly_landable']}),
+				"Waves":                        L.aerialOverlay(map,{'url':mapFolder+'/data2show/Wave_Export_converted.json', 'classes':['GER_wind_east', 'GER_wind_southeast', 'CZ_wind_southwest', 'Pyrenees_wind_south', 'Pyrenees_wind_north', 'FR_Alps_wind_northwest']}),
 				"TravelByGlider airfields":     airfields
 			};
 			var layers = L.control.myLayers(baseLayers, overlays,{'collapsed':false,}).addTo(map);
@@ -166,7 +189,7 @@
 		d3.csv(mapFolder+"/data2show/tbg_waypoints.cup")
 		//d3.csv(mapFolder+"/data2show/airfields.csv")
 		.row(function(d) {
-				// Code is supposed to work with CSV and CUP files, therefore the field coordintes is being generated when source is CUP.
+				// Code is supposed to work with CSV and CUP files, therefore the field coordinates is being generated when source is CUP.
 				if (d.coordinates===undefined){ 
 					//console.log(d.name)
 					d = {...d, coordinates: convertCoordinatesFromCUP(d.lat,d.name) + ', ' + convertCoordinatesFromCUP(d.lon,d.name) + ', 0'};
